@@ -69,6 +69,17 @@ const projects = [
     icon: <Leaf className="h-6 w-6 text-emerald-500"/>,
     date: "Nov 2025 - Dec 2025"
   },
+  {
+    title: "Personal Portfolio Website",
+    description: "The modern, responsive website you are viewing right now. Features a dual-theme design (Light & Dark Glassmorphism), real-time LeetCode statistics integration, and interactive credential verification using Shadcn UI dialogs.",
+    tech: ["Next.js", "Tailwind CSS", "Shadcn UI", "Lucide React", "LeetCode API"],
+    github: "https://github.com/sejal-godbole/portfolio",
+    live: "#", 
+    // Image: Modern Web Design / Layout
+    image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop",
+    icon: <LayoutTemplate className="h-6 w-6 text-indigo-500" />,
+    date: "Dec 2025"
+  },
 ];
 
 export default function Projects() {
