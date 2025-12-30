@@ -54,7 +54,11 @@ export default function Navbar() {
                 </Button>
             </Link>
           </div>
+          <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
           <Button>Download CV</Button>
+          </Link>
+               
+              
         </div>
 
         {/* Mobile Menu (Sheet) */}

@@ -33,7 +33,7 @@ const certifications = [
     issuer: "Udemy",
     date: "Sep 2025",
     image: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=1740&auto=format&fit=crop",
-    credentialImage: "web_dev.png",
+    credentialImage: "/web_dev.png",
   },
   {
     title: "Six Sigma: Green Belt",
@@ -157,7 +157,7 @@ export default function Certifications() {
                     </Button>
                   </DialogTrigger>
                   
-                  <DialogContent className="max-w-3xl w-full p-0 overflow-hidden bg-transparent border-none shadow-none">
+                  <DialogContent className="max-w-6xl w-full p-0 overflow-hidden bg-transparent border-none shadow-none">
                       
                       <DialogHeader className="sr-only">
                          <DialogTitle>Certificate: {cert.title}</DialogTitle>
@@ -167,18 +167,18 @@ export default function Certifications() {
                       {/* White container for the image so it looks like paper */}
                       <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-white shadow-2xl">
                          {/* UNCOMMENT THIS WHEN IMAGES ARE READY: */}
-                         {/* <Image 
+                         <Image 
                             src={cert.credentialImage} 
                             alt={`Certificate for ${cert.title}`}
                             fill
                             className="object-contain"
-                         /> */}
+                         />
 
-                         <div className="flex flex-col items-center justify-center h-full w-full bg-neutral-100 text-neutral-500 p-8 text-center">
+                         {/* <div className="flex flex-col items-center justify-center h-full w-full bg-neutral-100 text-neutral-500 p-8 text-center">
                              <Award className="h-16 w-16 mb-4 opacity-20" />
                              <p className="font-semibold text-black">Certificate Image Placeholder</p>
                              <p className="text-sm">Upload "{cert.credentialImage}" to public folder</p>
-                         </div>
+                         </div> */}
                       </div>
                   </DialogContent>
                 </Dialog>
