@@ -1,13 +1,24 @@
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
 // ... other imports
 
 const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space',
+  display: 'swap',
+})
+
+const roboto = Roboto_Condensed({
+  subsets: ['latin'],
+  variable: '--font-space',
+  display: 'swap',
+})
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         
         {/* --- START BACKGROUND GRID --- */}
         <div className="fixed left-0 top-0 -z-10 h-full w-full bg-background">

@@ -29,7 +29,7 @@ export default function Hero() {
                 View My Work <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
-            <Button variant="outline" size="lg" asChild className="gap-2">
+            <Button variant="secondary" size="lg" asChild className="gap-2 border-black">
               <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                 Download CV <Download className="h-4 w-4" />
               </Link>

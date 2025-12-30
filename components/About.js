@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-foreground/90 text-background">
+    <section id="about" className="py-20 bg-foreground/90 text-background  w-full">
       <div className="container mx-auto px-4 md:px-6 max-w-3xl text-center md:text-left">
         
         {/* Simple Heading */}
@@ -8,8 +8,9 @@ export default function About() {
           About Me
         </h2>
         
+        
         {/* The Paragraph */}
-        <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+        <p className="text-lg md:text-xl text-muted/50 leading-relaxed">
           I am a Third Year Computer Science & Engineering student with a passion for 
           building intelligent web applications. Specializing in <strong>Full Stack Development </strong> 
           using the <strong>Next.js ecosystem</strong>, I strive to bridge the gap between complex backend logic 
